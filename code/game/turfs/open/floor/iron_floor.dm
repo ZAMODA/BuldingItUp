@@ -207,6 +207,12 @@
 /turf/open/floor/iron/dark/corner/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
+//surface of the megastructure
+/turf/open/floor/iron/dark/smooth_large/megastructure
+	initial_gas_mix = "o2=66;n2=246;TEMP=293.15"
+	planetary_atmos = TRUE
+	baseturfs = /turf/open/floor/plating/megastructure
+
 /turf/open/floor/iron/checker/airless
 	initial_gas_mix = AIRLESS_ATMOS
 

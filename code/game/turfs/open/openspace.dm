@@ -210,3 +210,7 @@
 
 /turf/open/openspace/coldroom
 	initial_gas_mix = KITCHEN_COLDROOM_ATMOS
+
+/turf/open/openspace/megastructure
+	initial_gas_mix = "o2=66;n2=246;TEMP=293.15"
+	planetary_atmos = TRUE

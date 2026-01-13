@@ -90,6 +90,10 @@
 	baseturf = /turf/open/floor/plating/reinforced
 	baseturf_to_replace = list(/turf/open/floor/plating)
 
+/obj/effect/baseturf_helper/megastructure
+	name = "megastructure baseturf editor"
+	baseturf = /turf/open/openspace/megastructure
+
 /obj/effect/baseturf_helper/reinforced_plating/replace_baseturf(turf/thing)
 	if(istype(thing, /turf/open/floor/plating))
 		return //Plates should not be placed under other plates
