@@ -122,6 +122,14 @@
 	underlay_appearance.icon_state = /turf/open/misc/dirt::icon_state
 	return TRUE
 
+// Chasms for the megastructure, with planetary atmos.
+/turf/open/chasm/megastructure
+	name= "deep vent"
+	desc = "A constant gust of air wafts up from this hole. Watch your step."
+	initial_gas_mix = "o2=66;n2=246;TEMP=293.15"
+	planetary_atmos = TRUE
+	baseturfs = /turf/open/chasm/megastructure
+
 // Chasm that doesn't do any z-level nonsense and just kills/stores whoever steps into it.
 /turf/open/chasm/true
 	desc = "There's nothing at the bottom. Absolutely nothing."
