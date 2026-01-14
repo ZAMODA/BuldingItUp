@@ -427,23 +427,22 @@
 		/turf/closed/mineral/gibtonite/volcanic = 4,
 	)
 
-/turf/closed/mineral/random/megastructure
-	name = "grille filter"
-	desc = "You can see deposits forming on the surface of this grille. The bars look too thick to get wirecutters around, but it's flimsy enough for mining tools to tear apart."
-	icon = 'icons/obj/structures.dmi'
-	icon_state = "grille"
-	base_icon_state = "grille"
-	initial_gas_mix = "o2=66;n2=246;TEMP=293.15"
-
-/turf/closed/mineral/random/empty/megastructure
+/turf/closed/mineral/random/megastructure/
 	name = "grille filter"
 	desc = "The bars look too thick to get wirecutters around, but it's flimsy enough for mining tools to tear apart."
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "grille"
 	base_icon_state = "grille"
 	initial_gas_mix = "o2=66;n2=246;TEMP=293.15"
+	baseturfs = /turf/open/floor/iron/dark/smooth_large/megastructure
 
-/turf/closed/mineral/random/megastructure/mineral_chances()
+/turf/closed/mineral/random/empty/megastructure/danger
+	baseturfs = /turf/open/chasm/megastructure
+
+/turf/closed/mineral/random/megastructure/mineral
+	desc = "You can see deposits forming on the surface of this grille. The bars look too thick to get wirecutters around, but it's flimsy enough for mining tools to tear apart."
+
+/turf/closed/mineral/random/megastructure/mineral/mineral_chances()
 	return list(
 		/obj/item/stack/ore/diamond = 5,
 		/obj/item/stack/ore/gold = 10,
@@ -451,7 +450,8 @@
 		/obj/item/stack/ore/silver = 10,
 		/obj/item/stack/ore/titanium = 10,
 		/obj/item/stack/ore/uranium = 5,
-		/turf/closed/mineral/random/empty/megastructure = 60,
+		/turf/closed/mineral/random/empty/megastructure = 50,
+		/turf/closed/mineral/random/empty.megastructure/danger = 5,
 	)
 
 /turf/closed/mineral/random/snow
